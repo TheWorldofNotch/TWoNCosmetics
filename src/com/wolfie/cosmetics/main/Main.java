@@ -12,6 +12,8 @@ public class Main extends JavaPlugin implements Listener {
 	public void onEnable() {
 		Bukkit.getPluginManager().registerEvents(new onInventoryClick(), this);
 		this.getCommand("cosmetics").setExecutor(new cosmetics(this));
+		Bukkit.getPluginManager().registerEvents(new CrateOpenEvent(), this);
+		this.getCommand("CrateGUI").setExecutor(new CrateCommand(this));
 	}
 	
 	public void onDisable() {
