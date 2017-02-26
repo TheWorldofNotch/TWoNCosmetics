@@ -1,10 +1,9 @@
 name: Cosmetics
-main: com.wolfie.cosmetics.main
+main: com.wolfie.cosmetics.main.Main
 version: 1.0
 author: IAmTheWolfie
 commands:
    cosmetics:
       description: Opens up the Cosmetics menu.
-      usage: /<command>
-      permission: <plugin name>.openMenu
+      permission: cosmetics.openMenu
       permission-message: You don't have <permission>
